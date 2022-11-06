@@ -4,30 +4,72 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test Website</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Jonathan Yun</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="navbar__container">
-            <a href="#home" id="navbar__logo">Jonathan Yun's Portfolio</a>
-            <div class="navbar__toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-            <ul class="navbar__menu">
-                <li class="navbar__item">
-                    <a href="#school" class="navbar__links" id="home-page">School</a>
+    <section id="home">
+        <nav>
+            <div class="logo__name">Jonathan Yun</div>
+            <ul class="nav__link--list">
+                <li>
+                    <a href="#aerospace" class="
+                    nav__link--anchor
+                    link__hover-effect
+                    ">Aerospace</a>
                 </li>
-                <li class="navbar__item">
-                    <a href="#personal" class="navbar__links" id="home-page">Personal</a>
+                <li>
+                    <a href="" class="
+                    nav__link--anchor
+                    link__hover-effect
+                    ">School</a>
                 </li>
-                <li class="navbar__btn">
-                    <a href="#connect" class="button" id="connect">Connect!</a>
+                <li>
+                    <a href="" class="
+                    nav__link--anchor
+                    link__hover-effect
+                    ">Personal</a>
                 </li>
-            </ul> 
+                <li>
+                    <a href="" class="
+                    nav__link--anchor
+                    nav__link--anchor-primary
+                    ">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="flex flex-1">
+            <div class=".home__info row">
+                <div class="home__info--container">
+                    <figure class="home__picture--mask">
+                        <img src="me.JPG" class="home__picture" alt="j Ballin'">
+                    </figure>
+                    <h1 class="home__title">
+                        Welcome!
+                    </h1>
+                    <p class="home__info--p">
+                        I'm currently <strong class="text--color"> third-year Aerospace Engineering student at Georgia Tech</strong>. This is a catalog of my most notable projects!
+                    </p>
+                    <div class="home__linkedin">
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/jonathan-yun-476a36187/" class="
+                            link">Connect On LinkedIn</a>
+                    </div>
+                </div>
         </div>
-    </nav>
+    </section>
+    <section id="aerospace">
+        <div class="container">
+            <div class="row">
+                <h1 class="section__title">My <span class="text--color">Aerospace Engineering </span> Projects</h1>
+                <ul class="project__list">
+                    <li class="project">
+                        <div class="project__wrapper">
+                            <img src="./aerospace projects/AE1601_1_1.png" class="project__img" alt="AE1601_1_1">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
