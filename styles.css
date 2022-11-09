@@ -146,12 +146,8 @@ nav {
     padding-bottom: 50px;
 }
 
-.project__img {
-    width: 100%;
-}
-
-.project__wrapper {
-    box-shadow: 0 20px 80px rgba(0, 0, 0, 0.60);
-    border-radius: 20px;
-    overflow: hidden;
+.pdf__container {
+    padding-left: 5%;
+    padding-right: 5%;
+    margin: 0 auto;
 }
