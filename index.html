@@ -6,26 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jonathan Yun</title>
     <link rel="stylesheet" href="./styles.css">
+
 </head>
 <body>
     <section id="home">
-        <nav>
-            <div class="logo__name">Jonathan Yun</div>
+        <nav class="navbar sticky-top navbar-dark bg-dark">
+            <div class="logo__name">Jonathan Yun's Portfolio</div>
             <ul class="nav__link--list">
                 <li>
-                    <a href="#school" class="
+                    <a href="./index.html" class="
+                    nav__link--anchor
+                    link__hover-effect
+                    ">Home</a>
+                </li>
+                <li>
+                    <a href="./school.html" class="
                     nav__link--anchor
                     link__hover-effect
                     ">School</a>
                 </li>
                 <li>
-                    <a href="" class="
+                    <a href="./expflights.html" class="
                     nav__link--anchor
                     link__hover-effect
                     ">Experimental Flights</a>
                 </li>
                 <li>
-                    <a href="" class="
+                    <a href="./personal.html" class="
                     nav__link--anchor
                     link__hover-effect
                     ">Personal</a>
@@ -38,34 +45,23 @@
                 </li>
             </ul>
         </nav>
-        <div class="flex flex-1">
+        <div class="flex flex-1" style="margin-top:5%">
             <div class=".home__info row">
                 <div class="home__info--container">
                     <figure class="home__picture--mask">
-                        <img src="/me.JPG" class="home__picture" alt="j Ballin'">
+                        <img src="/profilepic.jpeg" class="home__picture" alt="j Ballin'">
                     </figure>
                     <h1 class="home__title">
                         Welcome!
                     </h1>
                     <p class="home__info--p">
-                        I'm currently <strong class="text--color"> third-year Aerospace Engineering student at Georgia Tech</strong>. This is a catalog of my most notable projects!
+                        I'm currently a <strong class="text--color"> third-year Aerospace Engineering student at Georgia Tech</strong>. This is a catalog of my most notable projects!
                     </p>
                     <div class="home__linkedin">
                         <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/jonathan-yun-476a36187/" class="
                             link">Connect On LinkedIn</a>
                     </div>
                 </div>
-        </div>
-    </section>
-    <section id="school">
-        <div class="container">
-            <div class="row">
-                <h1 class="section__title">My <span class="text--color">School </span> Projects</h1>
-            </div>
-        </div>  
-        <div class="pdf__container">
-            <embed src="/test.pdf" width="100%" height="1000px">
-            <embed src="/test2.pdf" width="100%" height="1000px">
         </div>
     </section>
 </body>
