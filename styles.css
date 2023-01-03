@@ -172,7 +172,7 @@ nav {
     padding-bottom: 1%;
     text-align: left;
 }
-
+ 
 .pdf__container {
     margin: 0 auto;
     padding-left: 15%;
@@ -181,8 +181,13 @@ nav {
 }
 
 .project__title {
+    color: #F7971E;  
     padding-top: 1%;
     padding-bottom: 1%;
+    text-align: left;
+}
+
+.project__title__2 {
     text-align: left;
 }
 
