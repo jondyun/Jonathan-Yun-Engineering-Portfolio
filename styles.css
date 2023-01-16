@@ -139,28 +139,34 @@ nav {
     height: 85%;
     border-radius: 10%;
     overflow: hidden;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.24);
-    margin-top: 15%;
+    box-shadow: 0 1em 1em rgba(0, 0, 0, 0.24);
+    margin-top: 20%;
+    align-content: center;
 }
 
 .home__picture {
     width: 100%;
 }
 
+.pic__caption {
+    align-content: center;
+    padding-left: 23%;
+}
+
 .home__title {
     font-size: 5em;
     text-align: left;
-    margin-top: 15%;
+    margin-top: 20%;
 }
 
 .home__info--p {
-    font-size: 1.75em;
-    margin-top: 15%;
+    font-size: 2em;
+    margin-top: 8%;
 }
 
 .home__linkedin {
-    font-size: 1.75em;
-    margin-top: 15%;
+    font-size: 2em;
+    margin-top: 8%;
 }
 
 /* Projects */
