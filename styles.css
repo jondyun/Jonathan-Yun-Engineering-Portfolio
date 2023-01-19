@@ -13,11 +13,15 @@
 h1, h2, h3, h4, h5, h6, span {
     color: #131313;
     text-align: center;
-    line-height: 1.25;
+    line-height: 1;
 }
 
 h1 {
     font-size: 5rem;
+}
+
+h2 {
+    font-size: 1.5rem;
 }
 
 p {
