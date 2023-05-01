@@ -65,8 +65,7 @@ nav {
     width: 100%;
     position: fixed;
     overflow: hidden;
-    max-width: 1000vw;
-    min-width: 15vw;
+    min-width: 10vw;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -82,7 +81,7 @@ nav {
 
 .nav__link--anchor {
     font-size: 1.5vw;
-    margin: 20px;
+    margin: 1vw;
     color: #FFFFFF;
     text-decoration: none;
     font-weight: 700;
@@ -100,7 +99,7 @@ nav {
     background: -webkit-linear-gradient(to right, #FFD200, #F7971E);  
     background: linear-gradient(to right, #FFD200, #F7971E); 
     padding: 15% 20% 15% 20%;
-    border-radius: 20px;
+    border-radius: 2vw;
     color: white;
     transition: all 300ms ease;
 }
@@ -217,6 +216,7 @@ nav {
 
 .project__title__2 {
     text-align: left;
+    font-size: 1.7vw;
 }
 
 .project__desc {
