@@ -17,20 +17,21 @@ h1, h2, h3, h4, h5, h6, span {
 }
 
 h1 {
-    font-size: 5rem;
+    font-size: 3vw;
 }
 
 h2 {
-    font-size: 1.5rem;
+    font-size: 1vw;
 }
 
 p {
     line-height: 1.5;
-    font-size: 1rem;
+    font-size: 2vw;
 }
 
 figure figcaption {
     text-align: center;
+    font-size: 1.5vw;
 }
 
 li {
@@ -60,11 +61,12 @@ li {
 /* Nav Bar */
 
 nav {
-    height: 7em;
+    height: 8vw;
     width: 100%;
     position: fixed;
     overflow: hidden;
-    max-width: 1000em;
+    max-width: 1000vw;
+    min-width: 15vw;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -79,6 +81,7 @@ nav {
 }
 
 .nav__link--anchor {
+    font-size: 1.5vw;
     margin: 20px;
     color: #FFFFFF;
     text-decoration: none;
@@ -107,7 +110,7 @@ nav {
 }
 
 .logo__name {
-    font-size: 30px;
+    font-size: 2.75vw;
     color: #F7971E;  
     color: -webkit-linear-gradient(to right, #FFD200, #F7971E);  
     color: linear-gradient(to right, #FFD200, #F7971E); 
@@ -143,11 +146,11 @@ nav {
   }
 
 .home__picture--mask {
-    width: 60%;
-    height: 85%;
+    width: 55%;
+    height: 65%;
     border-radius: 10%;
     overflow: hidden;
-    box-shadow: 0 1em 1em rgba(0, 0, 0, 0.24);
+    box-shadow: 0 1vw 1vw rgba(0, 0, 0, 0.24);
     margin-top: 20%;
     align-content: center;
 }
@@ -157,18 +160,17 @@ nav {
 }
 
 .home__title {
-    font-size: 5em;
+    font-size: 5vw;
     text-align: left;
     margin-top: 20%;
 }
 
 .home__info--p {
-    font-size: 2em;
     margin-top: 8%;
 }
 
 .home__linkedin {
-    font-size: 2em;
+    font-size: 3vw;
     margin-top: 8%;
 }
 
@@ -193,6 +195,7 @@ nav {
 }
 
 .section__desc {
+    font-size: 1.5vw;
     padding-top: 1%;
     padding-bottom: 1%;
     text-align: left;
@@ -217,7 +220,9 @@ nav {
 }
 
 .project__desc {
+    font-size: 1.5vw;
     padding-top: 1%;
     padding-bottom: 1%;
     text-align: left;
+    font-weight:normal;
 }
