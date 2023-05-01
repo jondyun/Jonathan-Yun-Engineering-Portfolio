@@ -1,2 +1,2 @@
 # jonathanyun617.github.io 
-Egnineering Portfolio for Jonathan Yun
+Engineering Portfolio for Jonathan Yun
