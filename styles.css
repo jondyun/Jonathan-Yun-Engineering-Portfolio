@@ -4,7 +4,7 @@
 @import url('https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css');
 
 * {
-    font-family: 'Verdana', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -30,8 +30,9 @@ p {
 }
 
 figure figcaption {
+    position: absolute;
     text-align: center;
-    font-size: 1.5vw;
+    font-size: 1.2vw;
 }
 
 li {
