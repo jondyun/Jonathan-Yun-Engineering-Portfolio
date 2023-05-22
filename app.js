@@ -1,20 +1,18 @@
-const carouselSlide = document.querySelector('.carousel-slide');
-const carouselImages = document.querySelectorAll('.carousel-slide test');
+//link it with console.log('test') (3:05 in video)
+var track = document.querySelector('.carousel__track'); //defines as the first instance of carousel__track
+var slides = Array.from(track.children);
+var nextButtom = document.querySelector('.carousel__button--right');
+var prevButton = document.querySelector('.carousel__button--left');
+var nav = document.querySelector('.carousel__nav');
+var dots = Array.from(nav.children);
 
-//Buttons
-const prevBtn = document.querySelector('#prevBtn');
-const nextBtn = document.querySelector('#nextBtn');
+var slideWidth = slides[0].getBoundingClientRect().width;
+//get dimensions
 
-//Counter
-let counter = 1;
-// const size = carouselImages[0].clientWidth;
-// carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+var setSlidePosition = (slide, i) => {
+    slide.style.left = slideWidth * i + 'px';
+};
+slides.forEach(setSlidePosition);
+//arrange slides next to each other in loop
 
-//Button Listeners
-
-nextBtn.addEventListener('click',()=>{
-    carouselSlide.style.transition = "transform 0.4s ease-in-out"
-    counter++;
-    console.log(counter);
-    //carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
-})
+//20:44
