@@ -185,10 +185,7 @@ nav {
 
 .section__container {
     margin: 0 auto;
-    padding-left: 15%;
-    padding-right: 20%;
-    padding-bottom: 7%;
-    padding-top: 2%;
+    padding: 2% 20% 7% 15%;
 }
 
 .section__title {
@@ -229,4 +226,76 @@ nav {
     padding-bottom: 1%;
     text-align: left;
     font-weight:normal;
+}
+.carousel {
+    display: flex;
+    height: 600px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.carousel__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel__track-container {
+    background: lightgreen;
+    height: 100%;
+    position: relative;
+}
+
+.carousel__track {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.carousel__slide {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.carousel__button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.carousel__button--left {
+    left: -3vw;
+}
+
+.carousel__button--right {
+    right: -3vw;
+}
+
+.carousel__nav {
+    background: pink;
+    display: flex;
+    justify-content: center;
+    padding: 0.8vw 0;
+}
+
+.carousel__indicator {
+    border: 0;
+    border-radius: 50%;
+    width: 1vw;
+    height: 1vw;
+    background: rgba(0,0,0,0.3);
+    margin: 0 1vw;
+}
+
+.carousel__indicator.current-slide {
+    background: rgb(0,0,0,0.75)
 }
