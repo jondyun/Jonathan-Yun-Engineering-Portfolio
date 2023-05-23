@@ -1,4 +1,3 @@
-//link it with console.log('test') (3:05 in video)
 var track = document.querySelector('.carousel__track'); //defines as the first instance of carousel__track
 var slides = Array.from(track.children);
 var nextButtom = document.querySelector('.carousel__button--right');
