@@ -15,4 +15,12 @@ var setSlidePosition = (slide, i) => {
 slides.forEach(setSlidePosition);
 //arrange slides next to each other in loop
 
-//20:44
+nextButton.addEventListener('click', e => {
+    var currentSlide = track.document.querySelector('.current-slide');
+    var nextSlide = currentSlide.nextElementSibling;
+    //move to the next slide
+    var amountToMove = nextSlide.style.left;
+    track.style.transform = 'translateX(' + amountToMove + ')';
+    currentSlide.classList.remove('current-slide');
+    nextSlide.classList.add('current-slide');
+})
