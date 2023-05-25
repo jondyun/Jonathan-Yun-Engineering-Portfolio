@@ -298,6 +298,7 @@ nav {
     height: 1vw;
     background: rgba(0,0,0,0.3);
     margin: 0 1vw;
+    cursor: pointer;
 }
 
 .carousel__indicator.current-slide {
