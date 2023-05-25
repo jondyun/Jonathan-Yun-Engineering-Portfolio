@@ -1,25 +1,73 @@
-var track = document.querySelector('.carousel__track'); //defines as the first instance of carousel__track
-var slides = Array.from(track.children);
-var nextButtom = document.querySelector('.carousel__button--right');
-var prevButton = document.querySelector('.carousel__button--left');
-var nav = document.querySelector('.carousel__nav');
-var dots = Array.from(nav.children);
+const track = document.querySelector('.carousel__track'); //defines as the first instance of carousel__track
+const slides = Array.from(track.children);
+const nextButtom = document.querySelector('.carousel__button--right');
+const prevButton = document.querySelector('.carousel__button--left');
+const nav = document.querySelector('.carousel__nav');
+const dots = Array.from(nav.children);
 
-var slideWidth = slides[0].getBoundingClientRect().width;
+const slideWidth = slides[0].getBoundingClientRect().width;
 //get dimensions
 
-var setSlidePosition = (slide, i) => {
+const setSlidePosition = (slide, i) => {
     slide.style.left = slideWidth * i + 'px';
 };
 slides.forEach(setSlidePosition);
 //arrange slides next to each other in loop
 
-nextButton.addEventListener('click', e => {
-    var currentSlide = track.document.querySelector('.current-slide');
-    var nextSlide = currentSlide.nextElementSibling;
-    //move to the next slide
-    var amountToMove = nextSlide.style.left;
-    track.style.transform = 'translateX(' + amountToMove + ')';
+const moveToSlide = (track, currentSlide, targetSlide) => {
+    track.style.transform = 'translateX(-' +  targetSlide.style.left + ')';
     currentSlide.classList.remove('current-slide');
-    nextSlide.classList.add('current-slide');
+    targetSlide.classList.add('current-slide');
+}
+
+const updateDots = (currentDor, targetDot) => {
+    currentDot.classList.remove('current-slide');
+    targetDot.classList.add('current-slide');
+}
+
+const hideShowArrors = (slides, prevButton, nextButton, targetIndex) => {
+    if (targetIndex === 0) {
+        prevButton.classList.add('is-hidden');
+        nextButton.classList.remove('is-hidden');
+    } else if (targetIndex === slides.length - 1)
+        prevButtonClassList.remove('is-hiddden');
+        nextButtonclassList.add('is-hidden');
+    } else {
+        prevButton.classList.remove('is-hidden');
+        nextButton.classList.remove('is-hidden');
+    }
+}
+
+prevButton.addEventListener('click', e => {
+    const currentSlide = track.document.querySelector('.current-slide');
+    const prevSlide = currentSlide.previousElementSibling;
+    const currentDot = dotsNav.querySelector('.current-slide');
+    const prevDot = current.previousElementSibling;
+    const prevIndex = slides.findIndex(slide => slide === prevSlide);
+    moveToSlide(track, currentSlide, prevSlide);
+    updateDots(currentDot, prevDot);
+    hideShowArrows = (slides, prevButton, nextButton, prevIndex);
+});
+
+nextButton.addEventListener('click', e => {
+    const currentSlide = track.document.querySelector('.current-slide');
+    const nextSlide = currentSlide.nextElementSibling;
+    const currentDot = dotsNav.querySelector('.current-slide');
+    const nextDot = current.nextElementSibling;
+    const nextIndex = slides.findIndex(slide => slide === nextSlide);
+    moveToSlide(track, currentSlide, nextSlide);
+    updateDots(currentDot, nextDot);
+    hideShowArrows = (slides, prevButton, nextButton, nextIndex);
+});
+
+dotsNav.addEventListener('click', e => {
+    const targetDot = e.target.closest('button');
+    const currentSlide = track.querySelector('.current-slide');
+    const currentDot = dotsNav.querySelector('.current-slide');
+    const targetIndex = dots.findIndex(dot => dot === targetDot);
+    const targetSlide = slides[targetIndex];
+    moveToSlide(track, currentSlide, targetSlide);
+    updateDots(currentDot, targetDot);
+    add hideShowArrows = (slides, prevButton, nextButton, targetIndex);
 })
+//move the dots
