@@ -228,8 +228,8 @@ nav {
     font-weight:normal;
 }
 .carousel {
-    display: flex;
-    height: 600px;
+    display: relative;
+    height: 80%;
     width: 80%;
     margin: 0 auto;
 }
