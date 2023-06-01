@@ -30,8 +30,8 @@ const hideShowArrors = (slides, prevButton, nextButton, targetIndex) => {
         prevButton.classList.add('is-hidden');
         nextButton.classList.remove('is-hidden');
     } else if (targetIndex === slides.length - 1)
-        prevButtonClassList.remove('is-hiddden');
-        nextButtonclassList.add('is-hidden');
+        prevButton.classList.remove('is-hidden');
+        nextButton.classList.add('is-hidden');
     } else {
         prevButton.classList.remove('is-hidden');
         nextButton.classList.remove('is-hidden');
