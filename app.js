@@ -20,7 +20,7 @@ const moveToSlide = (track, currentSlide, targetSlide) => {
     targetSlide.classList.add('current-slide');
 }
 
-const updateDots = (currentDor, targetDot) => {
+const updateDots = (currentDot, targetDot) => {
     currentDot.classList.remove('current-slide');
     targetDot.classList.add('current-slide');
 }
@@ -41,7 +41,7 @@ const hideShowArrors = (slides, prevButton, nextButton, targetIndex) => {
 prevButton.addEventListener('click', e => {
     const currentSlide = track.document.querySelector('.current-slide');
     const prevSlide = currentSlide.previousElementSibling;
-    const currentDot = dotsNav.querySelector('.current-slide');
+    const currentDot = nav.querySelector('.current-slide');
     const prevDot = current.previousElementSibling;
     const prevIndex = slides.findIndex(slide => slide === prevSlide);
     moveToSlide(track, currentSlide, prevSlide);
@@ -52,7 +52,7 @@ prevButton.addEventListener('click', e => {
 nextButton.addEventListener('click', e => {
     const currentSlide = track.document.querySelector('.current-slide');
     const nextSlide = currentSlide.nextElementSibling;
-    const currentDot = dotsNav.querySelector('.current-slide');
+    const currentDot = nav.querySelector('.current-slide');
     const nextDot = current.nextElementSibling;
     const nextIndex = slides.findIndex(slide => slide === nextSlide);
     moveToSlide(track, currentSlide, nextSlide);
@@ -60,10 +60,10 @@ nextButton.addEventListener('click', e => {
     hideShowArrows = (slides, prevButton, nextButton, nextIndex);
 });
 
-dotsNav.addEventListener('click', e => {
+nav.addEventListener('click', e => {
     const targetDot = e.target.closest('button');
     const currentSlide = track.querySelector('.current-slide');
-    const currentDot = dotsNav.querySelector('.current-slide');
+    const currentDot = nav.querySelector('.current-slide');
     const targetIndex = dots.findIndex(dot => dot === targetDot);
     const targetSlide = slides[targetIndex];
     moveToSlide(track, currentSlide, targetSlide);
