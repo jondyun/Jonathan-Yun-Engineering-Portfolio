@@ -1,6 +1,6 @@
 const track = document.querySelector('.carousel__track'); //defines as the first instance of carousel__track
 const slides = Array.from(track.children);
-const nextButtom = document.querySelector('.carousel__button--right');
+const nextButton = document.querySelector('.carousel__button--right');
 const prevButton = document.querySelector('.carousel__button--left');
 const nav = document.querySelector('.carousel__nav');
 const dots = Array.from(nav.children);
