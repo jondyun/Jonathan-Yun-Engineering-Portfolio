@@ -25,7 +25,7 @@ const updateDots = (currentDot, targetDot) => {
     targetDot.classList.add('current-slide');
 };
 
-const hideShowArrors = (slides, prevButton, nextButton, targetIndex) => {
+const hideShowArrows = (slides, prevButton, nextButton, targetIndex) => {
     if (targetIndex === 0) {
         prevButton.classList.add('is-hidden');
         nextButton.classList.remove('is-hidden');
