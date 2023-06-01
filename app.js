@@ -18,12 +18,12 @@ const moveToSlide = (track, currentSlide, targetSlide) => {
     track.style.transform = 'translateX(-' +  targetSlide.style.left + ')';
     currentSlide.classList.remove('current-slide');
     targetSlide.classList.add('current-slide');
-}
+};
 
 const updateDots = (currentDot, targetDot) => {
     currentDot.classList.remove('current-slide');
     targetDot.classList.add('current-slide');
-}
+};
 
 const hideShowArrors = (slides, prevButton, nextButton, targetIndex) => {
     if (targetIndex === 0) {
@@ -36,7 +36,7 @@ const hideShowArrors = (slides, prevButton, nextButton, targetIndex) => {
         prevButton.classList.remove('is-hidden');
         nextButton.classList.remove('is-hidden');
     }
-}
+};
 
 prevButton.addEventListener('click', e => {
     const currentSlide = track.document.querySelector('.current-slide');
