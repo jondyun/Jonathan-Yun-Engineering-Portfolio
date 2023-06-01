@@ -269,9 +269,9 @@ nav {
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
+    height: 2vw;
+    width: 2vw;
+    margin: 0 0.5vw;
     background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
