@@ -227,10 +227,11 @@ nav {
     text-align: left;
     font-weight:normal;
 }
+
 .carousel {
     display: relative;
-    height: 80%;
-    width: 80%;
+    height: 10vw;
+    width: 10vw;
     margin: 0 auto;
 }
 
