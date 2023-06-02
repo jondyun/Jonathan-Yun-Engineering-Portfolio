@@ -29,7 +29,7 @@ const hideShowArrows = (slides, prevButton, nextButton, targetIndex) => {
     if (targetIndex === 0) {
         prevButton.classList.add('is-hidden');
         nextButton.classList.remove('is-hidden');
-    } else if (targetIndex === slides.length - 1)
+    } else if (targetIndex === slides.length - 1) {
         prevButton.classList.remove('is-hidden');
         nextButton.classList.add('is-hidden');
     } else {
@@ -68,6 +68,6 @@ nav.addEventListener('click', e => {
     const targetSlide = slides[targetIndex];
     moveToSlide(track, currentSlide, targetSlide);
     updateDots(currentDot, targetDot);
-    add hideShowArrows = (slides, prevButton, nextButton, targetIndex);
+    hideShowArrows = (slides, prevButton, nextButton, targetIndex);
 });
 //move the dots
