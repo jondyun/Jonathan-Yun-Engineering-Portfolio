@@ -25,18 +25,18 @@ const updateDots = (currentDot, targetDot) => {
     targetDot.classList.add('current-slide');
 };
 
-const hideShowArrows = (slides, prevButton, nextButton, targetIndex) => {
-    if (targetIndex === 0) {
-        prevButton.classList.add('is-hidden');
-        nextButton.classList.remove('is-hidden');
-    } else if (targetIndex === slides.length - 1) {
-        prevButton.classList.remove('is-hidden');
-        nextButton.classList.add('is-hidden');
-    } else {
-        prevButton.classList.remove('is-hidden');
-        nextButton.classList.remove('is-hidden');
-    }
-};
+// const hideShowArrows = (slides, prevButton, nextButton, targetIndex) => {
+//     if (targetIndex === 0) {
+//         prevButton.classList.add('is-hidden');
+//         nextButton.classList.remove('is-hidden');
+//     } else if (targetIndex === slides.length - 1) {
+//         prevButton.classList.remove('is-hidden');
+//         nextButton.classList.add('is-hidden');
+//     } else {
+//         prevButton.classList.remove('is-hidden');
+//         nextButton.classList.remove('is-hidden');
+//     }
+// };
 
 prevButton.addEventListener('click', e => {
     const currentSlide = track.document.querySelector('.current-slide');
@@ -46,7 +46,7 @@ prevButton.addEventListener('click', e => {
     const prevIndex = slides.findIndex(slide => slide === prevSlide);
     moveToSlide(track, currentSlide, prevSlide);
     updateDots(currentDot, prevDot);
-    hideShowArrows = (slides, prevButton, nextButton, prevIndex);
+    //hideShowArrows = (slides, prevButton, nextButton, prevIndex);
 });
 
 nextButton.addEventListener('click', e => {
@@ -57,7 +57,7 @@ nextButton.addEventListener('click', e => {
     const nextIndex = slides.findIndex(slide => slide === nextSlide);
     moveToSlide(track, currentSlide, nextSlide);
     updateDots(currentDot, nextDot);
-    hideShowArrows = (slides, prevButton, nextButton, nextIndex);
+    //hideShowArrows = (slides, prevButton, nextButton, nextIndex);
 });
 
 nav.addEventListener('click', e => {
@@ -68,6 +68,6 @@ nav.addEventListener('click', e => {
     const targetSlide = slides[targetIndex];
     moveToSlide(track, currentSlide, targetSlide);
     updateDots(currentDot, targetDot);
-    hideShowArrows = (slides, prevButton, nextButton, targetIndex);
+    //hideShowArrows = (slides, prevButton, nextButton, targetIndex);
 });
 //move the dots
