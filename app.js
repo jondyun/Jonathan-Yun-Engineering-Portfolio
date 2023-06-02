@@ -42,7 +42,7 @@ prevButton.addEventListener('click', e => {
     const currentSlide = track.document.querySelector('.current-slide');
     const prevSlide = currentSlide.previousElementSibling;
     const currentDot = nav.querySelector('.current-slide');
-    const prevDot = current.previousElementSibling;
+    const prevDot = currentDot.previousElementSibling;
     const prevIndex = slides.findIndex(slide => slide === prevSlide);
     moveToSlide(track, currentSlide, prevSlide);
     updateDots(currentDot, prevDot);
@@ -53,7 +53,7 @@ nextButton.addEventListener('click', e => {
     const currentSlide = track.document.querySelector('.current-slide');
     const nextSlide = currentSlide.nextElementSibling;
     const currentDot = nav.querySelector('.current-slide');
-    const nextDot = current.nextElementSibling;
+    const nextDot = currentDot.nextElementSibling;
     const nextIndex = slides.findIndex(slide => slide === nextSlide);
     moveToSlide(track, currentSlide, nextSlide);
     updateDots(currentDot, nextDot);
