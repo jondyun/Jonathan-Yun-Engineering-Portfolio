@@ -1,4 +1,4 @@
-const track = document.querySelector('.carousel__track');
+const track = document.querySelector('.carousel__track'); //defines as the first instance of carousel__track
 const slides = Array.from(track.children);
 const nextButton = document.querySelector('.carousel__button--right');
 const prevButton = document.querySelector('.carousel__button--left');
@@ -39,7 +39,7 @@ const hideShowArrows = (slides, prevButton, nextButton, targetIndex) => {
 };
 
 prevButton.addEventListener('click', e => {
-    const currentSlide = track.document.querySelector('.current-slide');
+    const currentSlide = track.querySelector('.current-slide');
     const prevSlide = currentSlide.previousElementSibling;
     const currentDot = nav.querySelector('.current-slide');
     const prevDot = currentDot.previousElementSibling;
@@ -50,7 +50,7 @@ prevButton.addEventListener('click', e => {
 });
 
 nextButton.addEventListener('click', e => {
-    const currentSlide = track.document.querySelector('.current-slide');
+    const currentSlide = track.querySelector('.current-slide');
     const nextSlide = currentSlide.nextElementSibling;
     const currentDot = nav.querySelector('.current-slide');
     const nextDot = currentDot.nextElementSibling;
@@ -70,3 +70,4 @@ nav.addEventListener('click', e => {
     updateDots(currentDot, targetDot);
     hideShowArrows = (slides, prevButton, nextButton, targetIndex);
 });
+//move the dots
